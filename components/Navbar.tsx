@@ -3,47 +3,33 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+import MobileNavigation from './MobileNavigation';
+import { LINKS } from '@/lib/links';
+import { useMediaQuery } from '@/hooks/use-media-query';
+
 const Navbar = () => {
   const pathname = usePathname();
-
-  const LINKS = [
-    {
-      id: 1,
-      href: '/',
-      label: 'Domů',
-    },
-    {
-      id: 2,
-      href: '/about',
-      label: 'O mně',
-    },
-    {
-      id: 3,
-      href: '/projects',
-      label: 'Projekty',
-    },
-    {
-      id: 4,
-      href: '/contact',
-      label: 'Kontakt',
-    },
-  ];
+  const isDesktop = useMediaQuery('(min-width: 768px)');
 
   return (
     <header>
       <nav className='flex justify-end'>
-        <ul className='flex gap-14 font-bold text-2xl'>
-          {LINKS.map((link) => (
-            <li key={link.id} className='hover:text-teal-800  transition-all'>
-              <Link
-                href={link.href}
-                className={pathname === link.href ? 'text-teal-400  ' : ''}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        {isDesktop ? (
+          <ul className='hidden sm:flex gap-14 font-bold text-2xl'>
+            {LINKS.map((link) => (
+              <li key={link.id} className='hover:text-teal-800  transition-all'>
+                <Link
+                  href={link.href}
+                  className={pathname === link.href ? 'text-decoration  ' : ''}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <MobileNavigation />
+        )}
       </nav>
     </header>
   );

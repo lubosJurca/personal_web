@@ -1,14 +1,14 @@
 import Image from 'next/image';
 
 // logos
-import reactLogo from '@/assets/logos--react.png';
-import typescriptLogo from '@/assets/logos--typescript-icon.png';
-import javascriptLogo from '@/assets/skill-icons--javascript.png';
-import expressLogo from '@/assets/expressLogo.png';
-import tailwindLogo from '@/assets/tailwindLogo.png';
-import nextjsLogo from '@/assets/nextjsLogo.png';
-import mongodbLogo from '@/assets/mongodbLogo.png';
-import restapiLogo from '@/assets/restapiLogo.png';
+import reactLogo from '@/public/logos--react.png';
+import typescriptLogo from '@/public/logos--typescript-icon.png';
+import javascriptLogo from '@/public/skill-icons--javascript.png';
+import expressLogo from '@/public/expressLogo.png';
+import tailwindLogo from '@/public/tailwindLogo.png';
+import nextjsLogo from '@/public/nextjsLogo.png';
+import mongodbLogo from '@/public/mongodbLogo.png';
+import restapiLogo from '@/public/restapiLogo.png';
 
 const TechStack = () => {
   const techstack = [

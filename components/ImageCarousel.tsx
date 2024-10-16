@@ -6,13 +6,13 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 
-import image1 from '@/assets/image1.jpg';
-import image2 from '@/assets/image2.jpg';
-import image3 from '@/assets/image3.jpg';
-import image4 from '@/assets/image4.jpg';
-import image5 from '@/assets/image5.jpg';
-import image6 from '@/assets/image6.jpg';
-import image7 from '@/assets/image7.jpg';
+import image1 from '@/public/image1.jpg';
+import image2 from '@/public/image2.jpg';
+import image3 from '@/public/image3.jpg';
+import image4 from '@/public/image4.jpg';
+import image5 from '@/public/image5.jpg';
+import image6 from '@/public/image6.jpg';
+import image7 from '@/public/image7.jpg';
 import Image from 'next/image';
 
 const ImageCarousel = () => {
