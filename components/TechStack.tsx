@@ -48,7 +48,7 @@ const TechStack = () => {
 
   return (
     <section className='flex flex-col   '>
-      <h2 className='text-2xl text-center font-semibold mb-4'>Tech Stack</h2>
+      <h2 className='text-2xl text-center font-semibold mb-4'>TechStack</h2>
       <div className='flex flex-wrap items-center justify-center'>
         {techstack.map((tech) => (
           <div

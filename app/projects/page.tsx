@@ -120,7 +120,7 @@ const Projects = () => {
               </div>
             </CardContent>
             <CardFooter className='flex flex-col gap-2'>
-              <h2>Použité technologie</h2>
+              <h2 className='text-primaryLight'>Použité technologie</h2>
               <InvoiceAppTechStack />
             </CardFooter>
           </Card>
