@@ -31,20 +31,21 @@ export default async function RootLayout({
   return (
     <ViewTransitions>
       <html lang={locale}>
-        <body
-          className={`${montserrat.className} bg-gradient-to-r  from-[#203a3d] to-[#0d0e0e] antialiased text-primaryLight max-w-7xl mx-auto p-3 sm:p-8 flex flex-col min-h-screen`}
-        >
-          {' '}
-          <NextIntlClientProvider messages={messages}>
-            <Navbar />
-            <Separator className='bg-primaryDark my-8 ' />
-            <main className='flex-1  grid place-content-stretch '>
-              {children}
-            </main>
-            <Separator className='bg-primaryDark my-8 ' />
-            <Footer />
-            <Toaster />{' '}
-          </NextIntlClientProvider>
+        <body className='bg-gradient-to-r  from-[#203a3d] to-[#0d0e0e] flex flex-col min-h-screen'>
+          <div
+            className={`${montserrat.className} text-primaryLight max-w-7xl py-4 mx-auto `}
+          >
+            <NextIntlClientProvider messages={messages}>
+              <Navbar />
+              <Separator className='bg-primaryDark my-8 ' />
+              <main className='flex-1  grid place-content-stretch '>
+                {children}
+              </main>
+              <Separator className='bg-primaryDark my-8 ' />
+              <Footer />
+              <Toaster />{' '}
+            </NextIntlClientProvider>
+          </div>
         </body>
       </html>
     </ViewTransitions>

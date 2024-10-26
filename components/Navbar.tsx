@@ -8,6 +8,7 @@ import { LINKS } from '@/lib/links';
 import { useMediaQuery } from '@/hooks/use-media-query';
 import { useTranslations } from 'next-intl';
 import LocaleSwitcher from './LocaleSwitcher';
+
 const Navbar = () => {
   const pathname = usePathname();
   const isDesktop = useMediaQuery('(min-width: 768px)');
@@ -15,7 +16,8 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className='flex justify-end'>
+      <nav className='flex p-4 sm:p-2 items-center justify-between'>
+        <LocaleSwitcher />
         {isDesktop ? (
           <ul className='hidden sm:flex gap-14 font-bold text-2xl'>
             {LINKS.map((link) => (
@@ -34,7 +36,6 @@ const Navbar = () => {
           <MobileNavigation />
         )}
       </nav>
-      <LocaleSwitcher />
     </header>
   );
 };
