@@ -1,0 +1,59 @@
+{
+  "HomePage": {
+    "text": " Jsem odhodlaný samouk s vášní pro programování, kde nacházím prostor pro kreativitu a řešení výzev. Každý den se snažím zlepšovat, objevovat nové technologie a vytvářet moderní webové aplikace. Mým cílem je stát se Frontend developerem, který přináší hodnotu a inspiraci do každého projektu."
+  },
+  "Navbar": {
+    "home": "Domů",
+    "projects": "Projekty",
+    "about": "O mně",
+    "contact": "Kontakt"
+  },
+  "AboutPage": {
+    "title": "Něco málo o mně",
+    "p-1": "Jsem odhodlaný samouk, který se každý den učí nové technologie, aby se stal vývojářem v IT. Můj cíl není poháněn finančními důvody – v současném oboru mám bohaté zkušenosti a schopnost stabilně si udržet práci. Přesto mě programování zaujalo natolik, že v něm vidím svou budoucnost.",
+    "p-2": "Po dokončení maturity jsem se rozhodl cestovat a objevovat nové kultury i sám sebe. Strávil jsem přes dva roky ve Vancouveru v Kanadě, kde jsem pracoval ve strojírenství bez krajanů a díky tomu se zdokonalil v angličtině. Později jsem pracoval také v Německu, což mi dalo základy němčiny. Mimo to jsem procestoval Asii, navštívil jsem Bali, Kambodžu, Bangkok a Singapur a také jsem navštívil Hawaii.  Cestování  mě obohatilo o nové zážitky a pohled na svět.",
+    "p-3": "K programování mě přivedla vášeň pro řešení problémů. Začal jsem s HTML, CSS, JavaScriptem a Reactem, a poté se posunul k Next.js a backend technologiím prostřednictvím MERN stacku (MongoDB, Express.js, React, Node.js). Umím navrhnout jednoduchý backend a propojit ho s databází, což mi umožňuje vytvářet plně funkční webové aplikace.",
+    "p-4": "Na svém vlastním projektu ukazuji, co jsem se dosud naučil – od uživatelského rozhraní až po práci s daty na serveru. Moje chuť neustále se zlepšovat a objevovat nové technologie je moje největší síla. Ačkoliv nemám formální IT vzdělání, věřím, že moje praktické zkušenosti, jazyková vybavenost a silná motivace mě dovedou rychle rozvíjet pod správným vedením. Jsem připraven přinášet hodnotu do každého týmu, se kterým budu spolupracovat."
+  },
+  "ProjectsPage": {
+    "title": "Projekty",
+    "shortDescription": "MERN Stack aplikace pro správu faktur.",
+    "info": "Tato aplikace je postavená na MERN stacku (MongoDB, Express.js,React, Node.js) a zaměřená na vysoký výkon, škálovatelnost a jednoduchou údržbu.",
+    "frontend": {
+      "p-1": "Frontend je postaven v Reactu s TypeScriptem, což poskytuje typovou bezpečnost a usnadňuje správu komplexních datových struktur. Aplikace umožňuje uživatelům volbu jazyka mezi češtinou a angličtinou, což zlepšuje dostupnost pro různé uživatele. Pro správu jazyků je využita knihovna i18next.",
+      "p-2": " Formuláře jsou spravovány pomocí React Hook Form s validací dat prostřednictvím knihovny Zod, což zajišťuje hladkou práci s uživatelskými vstupy. Pro práci s daty používám React Query, který zajišťuje efektivní synchronizaci a cachování dat, čímž zlepšuje celkovou výkonnost aplikace.",
+      "p-3": "  Aplikace je plně responzivní, postavená s pomocí TailwindCSS, což umožňuje rychlé úpravy a flexibilní přizpůsobení rozhraní různým zařízením. Uživatelé mohou navíc přepínat mezi tmavým a světlým režimem, což jim dává možnost přizpůsobit vzhled aplikace jejich preferencím."
+    },
+    "backend": {
+      "p-1": " Backend běží na Express.js a je navržen tak, aby byl jednoduchý, robustní a efektivní. Autentizace a správa uživatelů je řešena pomocí jsonwebtoken, což poskytuje bezpečný přístup k chráněným zdrojům. Pro bezpečné ukládání hesel je nasazen bcryptjs.",
+      "p-2": " Práce s databází je realizována prostřednictvím MongoDB a Mongoose, což zajišťuje flexibilní a škálovatelné ukládání dat. Validace vstupů na backendu je prováděna také pomocí Zod, který zajišťuje konzistenci a validitu dat už od úrovně API.",
+      "p-3": " Pro optimalizaci práce s API a rychlé iterace je aplikace navržena podle RESTful principů, což zajišťuje snadnou údržbu a rozšiřitelnost."
+    },
+    "technologies": "Použité technologie"
+  },
+  "ContactPage": {
+    "title": "Kontakt",
+    "description": "Neváhejte se na mě obrátit prostřednictvím formuláře nebo mě kontaktujte přímo prostřednictvím následujících údajů:",
+    "h2": "Nebo přímo na:",
+    "phone": "Telefon:",
+    "sendButton": "Poslat zprávu",
+    "social": "Můžete mě také najít na:",
+    "ContactForm": {
+      "nameLabel": "Vaše Jméno",
+      "messageLabel": "Vaše Zpráva",
+      "messagePlaceholder": "Napište Vaši zprávu zde...",
+      "sendButton": "Poslat zprávu"
+    }
+  },
+  "LocaleSwitcher": {
+    "locale": "{locale, select, cs {Česky} en {English} other {Unknown}}",
+    "label": "Jazyk",
+    "en": "Anglicky",
+    "cs": "Česky"
+  },
+  "Footer": {
+    "h2": "Pojďme se spojit!",
+    "p": "Kdykoliv se rád zapojím do spolupráce nebo si jen popovídám",
+    "rights": "Všechna práva vyhrazena."
+  }
+}

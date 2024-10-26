@@ -1,0 +1,59 @@
+{
+  "HomePage": {
+    "text": "I'm a dedicated self-taught developer with a passion for programming, where I find space for creativity and solving challenges. I strive to improve every day, explore new technologies and create modern web applications. My goal is to become a frontend developer who brings value and inspiration to every project."
+  },
+  "Navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "AboutPage": {
+    "title": "A little bit about me",
+    "p-1": "I am a dedicated self-taught developer who is learning new technologies every day to become an IT developer. My goal is not driven by financial reasons - I have a wealth of experience in my current field and the ability to hold a steady job. Still, programming has intrigued me enough that I see my future in it.",
+    "p-2": "After graduating from high school, I decided to travel and discover new cultures and myself. I spent over two years in Vancouver, Canada, working in engineering without my compatriots, which helped me improve my English. Later I also worked in Germany, which gave me a foundation in German. Apart from that, I travelled around Asia, visiting Bali, Cambodia, Bangkok and Singapore, and I also visited Hawaii.  Travelling has enriched me with new experiences and world views.",
+    "p-3": "My passion for problem solving led me to programming. I started with HTML, CSS, JavaScript and React, and then moved on to Next.js and backend technologies through the MERN stack (MongoDB, Express.js, React, Node.js). I can design a simple backend and connect it to a database, allowing me to create fully functional web applications.",
+    "p-4": "On my own project I show what I have learned so far - from the user interface to working with data on the server. My desire to constantly improve and discover new technologies is my greatest strength. Although I don't have a formal IT background, I believe that my practical experience, language skills and strong motivation can develop me quickly under the right guidance. I am ready to bring value to any team I work with."
+  },
+  "ProjectsPage": {
+    "title": "Projects",
+    "shortDescription": "MERN Stack invoice management application.",
+    "info": "This application is built on MERN stack (MongoDB, Express.js,React, Node.js) and focused on high performance, scalability and easy maintenance.",
+    "frontend": {
+      "p-1": "The frontend is built in React with TypeScript, which provides type safety and makes it easy to manage complex data structures. The application allows users to choose a language between English and Czech, improving accessibility for different users. The i18next library is used for language management.",
+      "p-2": " Forms are managed using React Hook Form with data validation via the Zod library, ensuring smooth handling of user input. For data handling, I use React Query, which ensures efficient data synchronization and caching, improving the overall performance of the application.",
+      "p-3": "The app is fully responsive, built with TailwindCSS, allowing for quick customization and flexible interface adaptation to different devices. Additionally, users can switch between dark and light modes, giving them the ability to customize the look of the app to their preferences."
+    },
+    "backend": {
+      "p-1": "The backend runs on Express.js and is designed to be simple, robust and efficient. User authentication and management is handled using jsonwebtoken, providing secure access to protected resources. For secure password storage, bcryptjs is deployed.",
+      "p-2": "The database work is implemented through MongoDB and Mongoose, which ensures flexible and scalable data storage. Validation of the inputs on the backend is also done using Zod, which ensures data consistency and validity from the API level.",
+      "p-3": "To optimize API work and fast iterations, the application is designed according to RESTful principles, ensuring easy maintenance and extensibility."
+    },
+    "technologies": "Technologies used"
+  },
+  "ContactPage": {
+    "title": "Contact",
+    "description": "If you have any questions, please don't hesitate to contact me:",
+    "h2": "Or contact me:",
+    "phone": "Phone:",
+    "sendButton": "Send message",
+    "social": "You can also find me on:",
+    "ContactForm": {
+      "nameLabel": "Your Name",
+      "messageLabel": "Your Message",
+      "messagePlaceholder": "Type your message here...",
+      "sendButton": "Send"
+    }
+  },
+  "LocaleSwitcher": {
+    "locale": "{locale, select, cs {Česky} en {English} other {Unknown}}",
+    "label": "Language",
+    "en": "English",
+    "cs": "Czech"
+  },
+  "Footer": {
+    "h2": "Let's Connect!",
+    "p": "I'm always open to collaboration or just a good chat!",
+    "rights": "All Rights Reserved"
+  }
+}

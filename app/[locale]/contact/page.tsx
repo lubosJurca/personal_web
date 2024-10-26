@@ -2,20 +2,19 @@
 
 import ContactForm from '@/components/ContactForm';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const Contact = () => {
+  const t = useTranslations('ContactPage');
   return (
     <section className='container mx-auto py-10 px-4 lg:px-0'>
       <header className='text-center mb-8'>
         <div className='flex gap-4 justify-center  items-center '>
           <div className='w-3 h-8 bg-decoration'></div>
-          <h1>Kontakt</h1>
+          <h1>{t('title')}</h1>
         </div>
 
-        <p className='mt-4'>
-          Neváhejte se na mě obrátit prostřednictvím formuláře nebo mě
-          kontaktujte přímo prostřednictvím následujících údajů:
-        </p>
+        <p className='mt-4'>{t('description')}</p>
       </header>
 
       {/* Kontakt Form */}
@@ -25,10 +24,10 @@ const Contact = () => {
 
       {/* Další kontaktní informace */}
       <div className='mt-8 text-center'>
-        <h2 className='text-2xl font-semibold  mb-4'>Nebo přímo na:</h2>
+        <h2 className='text-2xl font-semibold  mb-4'>{t('h2')}</h2>
         <div className=''>
           <p className='mb-2'>
-            📞 Phone:{' '}
+            📞 {t('phone')}{' '}
             <Link
               href='tel:0948 038 061'
               className='text-decoration hover:text-teal-700 '
@@ -50,7 +49,7 @@ const Contact = () => {
 
       {/* Sociální ikony */}
       <div className='text-center mt-8 '>
-        <p className=''>You can also find me on:</p>
+        <p className=''>{t('social')}</p>
         <div className='flex justify-center space-x-4 mt-4'>
           <Link
             href='https://github.com/lubosJurca'

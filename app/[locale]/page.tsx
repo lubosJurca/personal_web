@@ -1,8 +1,10 @@
 import Image from 'next/image';
-import profilePic from '@/public/randomGuy.jpg';
-import TechStack from '../components/TechStack';
+import profilePic from '@/public/profile4.jpg';
+import TechStack from '@/components/TechStack';
+import { useTranslations } from 'next-intl';
 
 const Home = () => {
+  const t = useTranslations('HomePage');
   return (
     <section className='flex  flex-col py-10 gap-10  items-center '>
       <div className='flex w-full flex-col md:flex-row gap-y-6 justify-evenly items-center'>
@@ -20,13 +22,7 @@ const Home = () => {
             <h2>Junior React Developer</h2>
           </div>
 
-          <p className='text-primaryLight'>
-            Jsem odhodlaný samouk s vášní pro programování, kde nacházím prostor
-            pro kreativitu a řešení výzev. Každý den se snažím zlepšovat,
-            objevovat nové technologie a vytvářet moderní webové aplikace. Mým
-            cílem je stát se Frontend developerem, který přináší hodnotu a
-            inspiraci do každého projektu.
-          </p>
+          <p className='text-primaryLight'>{t('text')}</p>
         </article>
       </div>
 

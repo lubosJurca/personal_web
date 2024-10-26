@@ -6,10 +6,12 @@ import { Link } from 'next-view-transitions';
 import MobileNavigation from './MobileNavigation';
 import { LINKS } from '@/lib/links';
 import { useMediaQuery } from '@/hooks/use-media-query';
-
+import { useTranslations } from 'next-intl';
+import LocaleSwitcher from './LocaleSwitcher';
 const Navbar = () => {
   const pathname = usePathname();
   const isDesktop = useMediaQuery('(min-width: 768px)');
+  const t = useTranslations('Navbar');
 
   return (
     <header>
@@ -20,9 +22,10 @@ const Navbar = () => {
               <li key={link.id} className='hover:text-teal-800  transition-all'>
                 <Link
                   href={link.href}
+                  prefetch={false}
                   // className={pathname === link.href ? 'text-decoration  ' : ''}
                 >
-                  {link.label}
+                  {t(link.label)}
                 </Link>
               </li>
             ))}
@@ -31,6 +34,7 @@ const Navbar = () => {
           <MobileNavigation />
         )}
       </nav>
+      <LocaleSwitcher />
     </header>
   );
 };

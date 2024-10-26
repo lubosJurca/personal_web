@@ -18,8 +18,10 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from './ui/textarea';
 import { formSchema } from '@/lib/schemas';
 import { sendEmail } from '@/app/api/send';
+import { useTranslations } from 'next-intl';
 
 const ContactForm = () => {
+  const t = useTranslations('ContactPage.ContactForm');
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -48,9 +50,9 @@ const ContactForm = () => {
           name='name'
           render={({ field }) => (
             <FormItem>
-              <FormLabel className='font-semibold'>Vaše Jméno</FormLabel>
+              <FormLabel className='font-semibold'>{t('nameLabel')}</FormLabel>
               <FormControl className='bg-primaryLight text-primaryDark font-semibold'>
-                <Input placeholder='Vaše jméno...' {...field} />
+                <Input placeholder={`${t('nameLabel')}`} {...field} />
               </FormControl>
 
               <FormMessage />
@@ -64,7 +66,7 @@ const ContactForm = () => {
             <FormItem>
               <FormLabel className='font-semibold'>Email</FormLabel>
               <FormControl className='bg-primaryLight text-primaryDark font-semibold'>
-                <Input placeholder='Email...' type='email' {...field} />
+                <Input placeholder='Email ' type='email' {...field} />
               </FormControl>
 
               <FormMessage />
@@ -76,10 +78,12 @@ const ContactForm = () => {
           name='message'
           render={({ field }) => (
             <FormItem>
-              <FormLabel className='font-semibold '>Zpráva</FormLabel>
+              <FormLabel className='font-semibold '>
+                {t('messageLabel')}
+              </FormLabel>
               <FormControl className='bg-primaryLight text-primaryDark font-semibold'>
                 <Textarea
-                  placeholder='Napište Vaši zprávu zde...'
+                  placeholder={t('messagePlaceholder')}
                   rows={6}
                   {...field}
                 />
@@ -94,7 +98,7 @@ const ContactForm = () => {
           disabled={form.formState.isSubmitting}
           className='w-full bg-teal-700 hover:bg-decoration hover:text-primaryDark hover:font-semibold '
         >
-          Poslat zprávu
+          {t('sendButton')}
         </Button>
       </form>
     </Form>

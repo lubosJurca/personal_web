@@ -2,21 +2,21 @@ export const LINKS = [
   {
     id: 1,
     href: '/',
-    label: 'Domů',
+    label: 'home',
   },
   {
     id: 2,
     href: '/about',
-    label: 'O mně',
+    label: 'about',
   },
   {
     id: 3,
     href: '/projects',
-    label: 'Projekty',
+    label: 'projects',
   },
   {
     id: 4,
     href: '/contact',
-    label: 'Kontakt',
+    label: 'contact',
   },
 ];
