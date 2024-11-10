@@ -18,10 +18,8 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from './ui/textarea';
 import { formSchema } from '@/lib/schemas';
 import { sendEmail } from '@/app/api/send';
-import { useTranslations } from 'next-intl';
 
 const ContactForm = () => {
-  const t = useTranslations('ContactPage.ContactForm');
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -50,9 +48,9 @@ const ContactForm = () => {
           name='name'
           render={({ field }) => (
             <FormItem>
-              <FormLabel className='font-semibold'>{t('nameLabel')}</FormLabel>
+              <FormLabel className='font-semibold'>Name</FormLabel>
               <FormControl className='bg-primaryLight text-primaryDark font-semibold'>
-                <Input placeholder={`${t('nameLabel')}`} {...field} />
+                <Input placeholder='Name' {...field} />
               </FormControl>
 
               <FormMessage />
@@ -78,15 +76,9 @@ const ContactForm = () => {
           name='message'
           render={({ field }) => (
             <FormItem>
-              <FormLabel className='font-semibold '>
-                {t('messageLabel')}
-              </FormLabel>
+              <FormLabel className='font-semibold '>Your message</FormLabel>
               <FormControl className='bg-primaryLight text-primaryDark font-semibold'>
-                <Textarea
-                  placeholder={t('messagePlaceholder')}
-                  rows={6}
-                  {...field}
-                />
+                <Textarea placeholder='Your message...' rows={6} {...field} />
               </FormControl>
 
               <FormMessage />
@@ -98,7 +90,7 @@ const ContactForm = () => {
           disabled={form.formState.isSubmitting}
           className='w-full bg-teal-700 hover:bg-decoration hover:text-primaryDark hover:font-semibold '
         >
-          {t('sendButton')}
+          Submit
         </Button>
       </form>
     </Form>

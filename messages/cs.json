@@ -52,13 +52,13 @@
     "cs": "Česky"
   },
   "Footer": {
-    "h2": "Pojďme se spojit!",
-    "p": "Kdykoliv se rád zapojím do spolupráce nebo si jen popovídám",
+    "title": "Pojďme se spojit!",
+    "text": "Kdykoliv se rád zapojím do spolupráce nebo si jen popovídám",
     "rights": "Všechna práva vyhrazena."
   },
   "NotFound": {
-    "h2": "Stránka nenalezena",
-    "p": "Omlouváme se, ale stránka, kterou hledáte, neexistuje nebo byla přesunuta. Zkuste zkontrolovat URL nebo se vraťte na domovskou stránku.",
+    "title": "Stránka nenalezena",
+    "text": "Omlouváme se, ale stránka, kterou hledáte, neexistuje nebo byla přesunuta. Zkuste zkontrolovat URL nebo se vraťte na domovskou stránku.",
     "button": "Zpět na hlavní stránku"
   }
 }

@@ -1,17 +1,18 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+// import { Link } from '@/i18n/routing';
+
 import Link from 'next/link';
 
 const Footer = () => {
-  const t = useTranslations('Footer');
   return (
     <footer className='container flex flex-col sm:flex-row gap-8 justify-between text-center '>
       <div className='mb-4'>
-        <h2 className='text-2xl font-semibold'>{t('h2')}</h2>
-        <p className='text-gray-400'>{t('p')}</p>
+        <h2 className='text-2xl font-semibold'>Title</h2>
+        <p className='text-gray-400'>Text</p>
       </div>
       <div>
+        {/* <FooterLinks /> */}
         <div className='flex justify-center space-x-6 mb-6'>
           <Link
             href='https://github.com/lubosJurca'
@@ -45,7 +46,7 @@ const Footer = () => {
           </Link>
         </div>
         <p className='text-gray-500 text-sm'>
-          &copy; {new Date().getFullYear()} Lubos Jurca. {t('rights')}
+          &copy; {new Date().getFullYear()} Lubos Jurca. Tadyy Rights
         </p>
       </div>
     </footer>

@@ -1,10 +1,8 @@
 import Image from 'next/image';
 import profilePic from '@/public/profile4.jpg';
 import TechStack from '@/components/TechStack';
-import { useTranslations } from 'next-intl';
 
 const Home = () => {
-  const t = useTranslations('HomePage');
   return (
     <section className='flex  flex-col py-10 gap-10  items-center '>
       <div className='flex w-full flex-col md:flex-row gap-y-6 justify-evenly items-center'>
@@ -22,7 +20,7 @@ const Home = () => {
             <h2>Junior React Developer</h2>
           </div>
 
-          <p className='text-primaryLight'>{t('text')}</p>
+          <p className='text-primaryLight'>Text</p>
         </article>
       </div>
 

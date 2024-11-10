@@ -6,15 +6,10 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Link from 'next/link';
 
 import { LINKS } from '@/lib/links';
-import { usePathname } from 'next/navigation';
-import { useTranslations } from 'next-intl';
 
 const MobileNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
-
-  const t = useTranslations('Navbar');
-
+  console.log(isOpen);
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
   };
@@ -45,7 +40,7 @@ const MobileNavigation = () => {
     hidden: {
       opacity: 0,
     },
-    visible: (i: any) => ({
+    visible: (i: number) => ({
       opacity: 1,
 
       transition: {
@@ -114,7 +109,7 @@ const MobileNavigation = () => {
                 onClick={toggleMenu}
                 className='text-4xl font-bold text-primaryLight hover:text-teal-800 transition-all'
               >
-                <Link href={link.href}>{t(link.label)}</Link>
+                <Link href={link.href}>{link.label}</Link>
               </motion.li>
             ))}
           </motion.ul>
