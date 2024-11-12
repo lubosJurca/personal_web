@@ -3,13 +3,15 @@
 // import { Link } from '@/i18n/routing';
 
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation('all');
   return (
     <footer className='container flex flex-col sm:flex-row gap-8 justify-between text-center '>
       <div className='mb-4'>
-        <h2 className='text-2xl font-semibold'>Title</h2>
-        <p className='text-gray-400'>Text</p>
+        <h2 className='text-2xl font-semibold'>{t('Footer.title')}</h2>
+        <p className='text-gray-400'>{t('Footer.text')}</p>
       </div>
       <div>
         {/* <FooterLinks /> */}
@@ -46,7 +48,7 @@ const Footer = () => {
           </Link>
         </div>
         <p className='text-gray-500 text-sm'>
-          &copy; {new Date().getFullYear()} Lubos Jurca. Tadyy Rights
+          &copy; {new Date().getFullYear()} Lubos Jurca. {t('Footer.rights')}
         </p>
       </div>
     </footer>

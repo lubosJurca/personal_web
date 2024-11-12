@@ -35,14 +35,14 @@
     "title": "Contact",
     "description": "If you have any questions, please don't hesitate to contact me:",
     "h2": "Or contact me:",
-    "phone": "Phone:",
+
     "sendButton": "Send message",
-    "social": "You can also find me on:",
+
     "ContactForm": {
       "nameLabel": "Your Name",
       "messageLabel": "Your Message",
       "messagePlaceholder": "Type your message here...",
-      "sendButton": "Send"
+      "submitButton": "Send"
     }
   },
   "LocaleSwitcher": {

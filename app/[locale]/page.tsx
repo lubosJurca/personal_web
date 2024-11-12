@@ -1,8 +1,13 @@
 import Image from 'next/image';
 import profilePic from '@/public/profile4.jpg';
 import TechStack from '@/components/TechStack';
+import initTranslations from '../i18n';
 
-const Home = () => {
+const i18nNamespaces = ['all'];
+
+const Home = async ({ params: { locale } }: { params: { locale: string } }) => {
+  const { t } = await initTranslations(locale, i18nNamespaces);
+
   return (
     <section className='flex  flex-col py-10 gap-10  items-center '>
       <div className='flex w-full flex-col md:flex-row gap-y-6 justify-evenly items-center'>
@@ -20,7 +25,7 @@ const Home = () => {
             <h2>Junior React Developer</h2>
           </div>
 
-          <p className='text-primaryLight'>Text</p>
+          <p className='text-primaryLight'>{t('HomePage.text')}</p>
         </article>
       </div>
 

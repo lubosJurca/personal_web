@@ -35,14 +35,12 @@
     "title": "Kontakt",
     "description": "Neváhejte se na mě obrátit prostřednictvím formuláře nebo mě kontaktujte přímo prostřednictvím následujících údajů:",
     "h2": "Nebo přímo na:",
-    "phone": "Telefon:",
     "sendButton": "Poslat zprávu",
-    "social": "Můžete mě také najít na:",
     "ContactForm": {
       "nameLabel": "Vaše Jméno",
       "messageLabel": "Vaše Zpráva",
       "messagePlaceholder": "Napište Vaši zprávu zde...",
-      "sendButton": "Poslat zprávu"
+      "submitButton": "Poslat zprávu"
     }
   },
   "LocaleSwitcher": {

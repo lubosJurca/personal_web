@@ -3,7 +3,6 @@ import Link from 'next/link';
 const SocialIcons = () => {
   return (
     <div className='text-center mt-8 '>
-      <p className=''>Social</p>
       <div className='flex justify-center space-x-4 mt-4'>
         <Link
           href='https://github.com/lubosJurca'

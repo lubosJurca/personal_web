@@ -6,10 +6,12 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Link from 'next/link';
 
 import { LINKS } from '@/lib/links';
+import { useTranslation } from 'react-i18next';
 
 const MobileNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
+  const { t } = useTranslation('all');
+
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
   };
@@ -109,7 +111,7 @@ const MobileNavigation = () => {
                 onClick={toggleMenu}
                 className='text-4xl font-bold text-primaryLight hover:text-teal-800 transition-all'
               >
-                <Link href={link.href}>{link.label}</Link>
+                <Link href={link.href}>{t(`Navbar.${link.label}`)}</Link>
               </motion.li>
             ))}
           </motion.ul>

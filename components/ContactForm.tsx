@@ -18,8 +18,10 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from './ui/textarea';
 import { formSchema } from '@/lib/schemas';
 import { sendEmail } from '@/app/api/send';
+import { useTranslation } from 'react-i18next';
 
 const ContactForm = () => {
+  const { t } = useTranslation('all');
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -48,9 +50,14 @@ const ContactForm = () => {
           name='name'
           render={({ field }) => (
             <FormItem>
-              <FormLabel className='font-semibold'>Name</FormLabel>
+              <FormLabel className='font-semibold'>
+                {t('ContactPage.ContactForm.nameLabel')}
+              </FormLabel>
               <FormControl className='bg-primaryLight text-primaryDark font-semibold'>
-                <Input placeholder='Name' {...field} />
+                <Input
+                  placeholder={t('ContactPage.ContactForm.nameLabel')}
+                  {...field}
+                />
               </FormControl>
 
               <FormMessage />
@@ -76,9 +83,15 @@ const ContactForm = () => {
           name='message'
           render={({ field }) => (
             <FormItem>
-              <FormLabel className='font-semibold '>Your message</FormLabel>
+              <FormLabel className='font-semibold '>
+                {t('ContactPage.ContactForm.messageLabel')}
+              </FormLabel>
               <FormControl className='bg-primaryLight text-primaryDark font-semibold'>
-                <Textarea placeholder='Your message...' rows={6} {...field} />
+                <Textarea
+                  placeholder={t('ContactPage.ContactForm.messagePlaceholder')}
+                  rows={6}
+                  {...field}
+                />
               </FormControl>
 
               <FormMessage />
@@ -90,7 +103,7 @@ const ContactForm = () => {
           disabled={form.formState.isSubmitting}
           className='w-full bg-teal-700 hover:bg-decoration hover:text-primaryDark hover:font-semibold '
         >
-          Submit
+          {t('ContactPage.ContactForm.submitButton')}
         </Button>
       </form>
     </Form>
