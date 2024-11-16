@@ -37,8 +37,8 @@ const ContactForm = () => {
     sendEmail(values);
     toast({
       className: 'bg-green-400 font-semibold border-none text-primaryDark',
-      title: 'Zpráva byla odeslána!',
-      description: 'Děkuji za zprávu. Pokusím se odpovědět co nejdříve! ',
+      title: t('Toast.title'),
+      description: t('Toast.description'),
     });
     form.reset();
   }

@@ -48,7 +48,7 @@ export default async function MainLayout({
           >
             <Navbar />
             <Separator className='bg-primaryDark my-8 ' />
-            <main className='flex-1  grid place-content-stretch '>
+            <main className='container mx-auto flex-1  grid place-content-stretch '>
               {children}
             </main>
             <Separator className='bg-primaryDark my-8 ' />

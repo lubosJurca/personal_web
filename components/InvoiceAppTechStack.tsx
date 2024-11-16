@@ -20,7 +20,7 @@ const InvoiceAppTechStack = () => {
       {techstack.map((tech, index) => (
         <li
           key={index}
-          className='border border-decoration bg-teal-900 rounded-md grid place-content-center p-2 '
+          className='border border-decoration bg-teal-900 rounded-md grid place-content-center p-2 w-fit '
         >
           {tech}
         </li>

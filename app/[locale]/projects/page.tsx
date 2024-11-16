@@ -23,7 +23,7 @@ const Projects = async ({
 }) => {
   const { t } = await initTranslations(locale, i18nNamespaces);
   return (
-    <section className='text-center py-10  '>
+    <section className='text-center py-10'>
       <div className='container '>
         <div className='flex gap-4 justify-center pb-10 items-center'>
           <div className='w-3 h-8 bg-decoration'></div>

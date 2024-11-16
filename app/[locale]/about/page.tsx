@@ -11,7 +11,7 @@ const About = async ({
   const { t } = await initTranslations(locale, i18nNamespaces);
 
   return (
-    <section className='flex flex-col text-center  py-10  gap-8'>
+    <section className='text-center py-10 flex flex-col gap-8'>
       <div className='flex gap-4 justify-center  items-center'>
         <div className='w-3 h-full bg-decoration'></div>
         <h1>{t('AboutPage.title')}</h1>
