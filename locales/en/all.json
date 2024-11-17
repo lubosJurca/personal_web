@@ -16,6 +16,10 @@
     "p-4": "On my own project I show what I have learned so far - from the user interface to working with data on the server. My desire to constantly improve and discover new technologies is my greatest strength. Although I don't have a formal IT background, I believe that my practical experience, language skills and strong motivation can develop me quickly under the right guidance. I am ready to bring value to any team I work with."
   },
   "ProjectsPage": {
+    "blockquote": {
+      "p-1": "There is only one project on this page so far. This is because it is a key and complex project that involves most of the technologies and skills I have learned. Although I have done smaller projects, I have chosen to focus on this one because it best represents my work.",
+      "p-2": "I would like to assure you that I am already working on other interesting projects, which I will publish here soon. Thank you for your understanding and patience."
+    },
     "title": "Projects",
     "shortDescription": "MERN Stack invoice management application.",
     "info": "This application is built on MERN stack (MongoDB, Express.js,React, Node.js) and focused on high performance, scalability and easy maintenance.",

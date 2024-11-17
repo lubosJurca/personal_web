@@ -25,9 +25,22 @@ const Projects = async ({
   return (
     <section className='text-center py-10'>
       <div className='container '>
-        <div className='flex gap-4 justify-center pb-10 items-center'>
-          <div className='w-3 h-8 bg-decoration'></div>
-          <h1>{t('ProjectsPage.title')}</h1>
+        <div className='flex flex-col gap-4 justify-center pb-10 items-center'>
+          <div className='flex gap-4 justify-center  items-center'>
+            <div className='w-3 h-8 bg-decoration'></div>
+            <h1>{t('ProjectsPage.title')}</h1>
+          </div>
+
+          <blockquote className=' relative  bg-transparent text-primaryLight italic p-8 rounded-lg  '>
+            <span className='absolute top-0 left-0 text-[4rem] text-primaryLight leading-none'>
+              &ldquo;
+            </span>
+            <p>{t('ProjectsPage.blockquote.p-1')}</p>
+            <p className='mt-2'>{t('ProjectsPage.blockquote.p-2')}</p>
+            <span className='absolute -bottom-10 right-2 text-[4rem] text-primaryLight '>
+              &rdquo;
+            </span>
+          </blockquote>
         </div>
 
         <div className='flex flex-col justify-around'>

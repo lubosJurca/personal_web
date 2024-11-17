@@ -16,6 +16,10 @@
     "p-4": "Na svém vlastním projektu ukazuji, co jsem se dosud naučil – od uživatelského rozhraní až po práci s daty na serveru. Moje chuť neustále se zlepšovat a objevovat nové technologie je moje největší síla. Ačkoliv nemám formální IT vzdělání, věřím, že moje praktické zkušenosti, jazyková vybavenost a silná motivace mě dovedou rychle rozvíjet pod správným vedením. Jsem připraven přinášet hodnotu do každého týmu, se kterým budu spolupracovat."
   },
   "ProjectsPage": {
+    "blockquote": {
+      "p-1": "Na této stránce najdete zatím jen jeden projekt. Je to proto, že se jedná o klíčový a komplexní projekt, který zahrnuje většinu technologií a dovedností, které jsem si osvojil. I když mám za sebou i menší projekty, rozhodl jsem se soustředit právě na tento,protože nejlépe reprezentuje mou práci.",
+      "p-2": " Rád bych vás ujistil, že již pracuji na dalších zajímavých projektech, které zde brzy zveřejním. Děkuji za pochopení a trpělivost."
+    },
     "title": "Projekty",
     "shortDescription": "MERN Stack aplikace pro správu faktur.",
     "info": "Tato aplikace je postavená na MERN stacku (MongoDB, Express.js,React, Node.js) a zaměřená na vysoký výkon, škálovatelnost a jednoduchou údržbu.",

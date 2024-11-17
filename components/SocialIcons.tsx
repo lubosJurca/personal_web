@@ -20,7 +20,7 @@ const SocialIcons = () => {
           </svg>
         </Link>
         <Link
-          href='https://linkedin.com/in/yourusername'
+          href='https://www.linkedin.com/in/lubo%C5%A1-jur%C4%8Da-364262237/'
           target='_blank'
           rel='noopener noreferrer'
           className='hover:text-decoration transition-all duration-300'
