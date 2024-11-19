@@ -13,10 +13,29 @@ import image4 from '@/public/image4.jpg';
 import image5 from '@/public/image5.jpg';
 import image6 from '@/public/image6.jpg';
 import image7 from '@/public/image7.jpg';
+import image8 from '@/public/image8.jpeg';
+import image9 from '@/public/image9.jpg';
+import image10 from '@/public/image10.jpg';
+import image11 from '@/public/image11.jpg';
+import image12 from '@/public/image12.jpg';
+
 import Image from 'next/image';
 
 const ImageCarousel = () => {
-  const images = [image2, image1, image3, image4, image5, image6, image7];
+  const images = [
+    image9,
+    image10,
+    image11,
+    image12,
+    image8,
+    image2,
+    image1,
+    image3,
+    image4,
+    image5,
+    image6,
+    image7,
+  ];
 
   return (
     <Carousel
