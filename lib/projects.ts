@@ -1,0 +1,70 @@
+import invoiceAppScreenshot from '@/public/mernApp.png';
+import noteAppScreenshot from '@/public/note-printscreen.png';
+
+export const projects = [
+  {
+    title: 'Note App',
+    description: 'ProjectsPage.noteApp.shortDescription',
+    image: noteAppScreenshot,
+    github: 'https://github.com/lubosJurca/Notes-app',
+    liveDemo: 'https://notes-app-iota-coral.vercel.app/',
+    technologies: [
+      'React 19',
+      'Next.js 15',
+      'TypeScript',
+      'TanStack React Query',
+      'Server Actions',
+      'Prisma ORM',
+      'Neon Serverless PostgreSQL',
+      'Kinde Auth',
+      'ShadCN UI',
+      'Zod',
+      'React Hook Form',
+      'Next Safe Action',
+    ],
+    info: 'ProjectsPage.noteApp.info',
+    frontend: [
+      'ProjectsPage.noteApp.frontend.p-1',
+      'ProjectsPage.noteApp.frontend.p-2',
+      'ProjectsPage.noteApp.frontend.p-3',
+    ],
+    backend: [
+      'ProjectsPage.noteApp.backend.p-1',
+      'ProjectsPage.noteApp.backend.p-2',
+      'ProjectsPage.noteApp.backend.p-3',
+    ],
+  },
+  {
+    title: 'Invoice App',
+    description: 'ProjectsPage.invoiceApp.shortDescription',
+    image: invoiceAppScreenshot,
+    github: 'https://github.com/lubosJurca/MERN-Invoice',
+    liveDemo: 'https://mern-invoice-jkgn.onrender.com/',
+    technologies: [
+      'React',
+      'Express.js',
+      'Node.js',
+      'MongoDB',
+      'TypeScript',
+      'Tailwind CSS',
+      'JWT',
+      'REST API',
+      'i18next',
+      'React Query',
+      'Shadcn UI',
+      'Zod',
+      'React Hook Form',
+    ],
+    info: 'ProjectsPage.invoiceApp.info',
+    frontend: [
+      'ProjectsPage.invoiceApp.frontend.p-1',
+      'ProjectsPage.invoiceApp.frontend.p-2',
+      'ProjectsPage.invoiceApp.frontend.p-3',
+    ],
+    backend: [
+      'ProjectsPage.invoiceApp.backend.p-1',
+      'ProjectsPage.invoiceApp.backend.p-2',
+      'ProjectsPage.invoiceApp.backend.p-3',
+    ],
+  },
+];

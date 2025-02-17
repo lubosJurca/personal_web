@@ -16,24 +16,40 @@
     "p-4": "On my own project I show what I have learned so far - from the user interface to working with data on the server. My desire to constantly improve and discover new technologies is my greatest strength. Although I don't have a formal IT background, I believe that my practical experience, language skills and strong motivation can develop me quickly under the right guidance. I am ready to bring value to any team I work with."
   },
   "ProjectsPage": {
+    "title": "Projects",
+    "technologies": "Technologies used",
     "blockquote": {
       "p-1": "There is only one project on this page so far. This is because it is a key and complex project that involves most of the technologies and skills I have learned. Although I have done smaller projects, I have chosen to focus on this one because it best represents my work.",
       "p-2": "I would like to assure you that I am already working on other interesting projects, which I will publish here soon. Thank you for your understanding and patience."
     },
-    "title": "Projects",
-    "shortDescription": "MERN Stack invoice management application.",
-    "info": "This application is built on MERN stack (MongoDB, Express.js,React, Node.js) and focused on high performance, scalability and easy maintenance.",
-    "frontend": {
-      "p-1": "The frontend is built in React with TypeScript, which provides type safety and makes it easy to manage complex data structures. The application allows users to choose a language between English and Czech, improving accessibility for different users. The i18next library is used for language management.",
-      "p-2": " Forms are managed using React Hook Form with data validation via the Zod library, ensuring smooth handling of user input. For data handling, I use React Query, which ensures efficient data synchronization and caching, improving the overall performance of the application.",
-      "p-3": "The app is fully responsive, built with TailwindCSS, allowing for quick customization and flexible interface adaptation to different devices. Additionally, users can switch between dark and light modes, giving them the ability to customize the look of the app to their preferences."
+    "invoiceApp": {
+      "shortDescription": "MERN Stack invoice management application.",
+      "info": "This application is built on MERN stack (MongoDB, Express.js,React, Node.js) and focused on high performance, scalability and easy maintenance.",
+      "frontend": {
+        "p-1": "The frontend is built in React with TypeScript, which provides type safety and makes it easy to manage complex data structures. The application allows users to choose a language between English and Czech, improving accessibility for different users. The i18next library is used for language management.",
+        "p-2": " Forms are managed using React Hook Form with data validation via the Zod library, ensuring smooth handling of user input. For data handling, I use React Query, which ensures efficient data synchronization and caching, improving the overall performance of the application.",
+        "p-3": "The app is fully responsive, built with TailwindCSS, allowing for quick customization and flexible interface adaptation to different devices. Additionally, users can switch between dark and light modes, giving them the ability to customize the look of the app to their preferences."
+      },
+      "backend": {
+        "p-1": "The backend runs on Express.js and is designed to be simple, robust and efficient. User authentication and management is handled using jsonwebtoken, providing secure access to protected resources. For secure password storage, bcryptjs is deployed.",
+        "p-2": "The database work is implemented through MongoDB and Mongoose, which ensures flexible and scalable data storage. Validation of the inputs on the backend is also done using Zod, which ensures data consistency and validity from the API level.",
+        "p-3": "To optimize API work and fast iterations, the application is designed according to RESTful principles, ensuring easy maintenance and extensibility."
+      }
     },
-    "backend": {
-      "p-1": "The backend runs on Express.js and is designed to be simple, robust and efficient. User authentication and management is handled using jsonwebtoken, providing secure access to protected resources. For secure password storage, bcryptjs is deployed.",
-      "p-2": "The database work is implemented through MongoDB and Mongoose, which ensures flexible and scalable data storage. Validation of the inputs on the backend is also done using Zod, which ensures data consistency and validity from the API level.",
-      "p-3": "To optimize API work and fast iterations, the application is designed according to RESTful principles, ensuring easy maintenance and extensibility."
-    },
-    "technologies": "Technologies used"
+    "noteApp": {
+      "shortDescription": "Full-stack Notes application with authentication and responsive design",
+      "info": "The Notes app is a modern, responsive and secure web application built on Next.js 15 that enables notes management with Neon serverless PostgreSQL, Server Actions, Prisma ORM and Kinde Auth authentication, while the frontend uses ShadCN UI and React Query for efficient data handling. ",
+      "frontend": {
+        "p-1": "The app runs on Next.js 15 with React 19, which allows for fast rendering and efficient state management. App Router brings a modern approach to site management and optimizes performance.",
+        "p-2": "I use TanStack React Query to sync and retrieve notes, which efficiently caches data, minimizes server requests, and supports optimistic updates.",
+        "p-3": "The interface is designed with an emphasis on responsiveness and accessibility. Components from ShadCN UI ensure a consistent look and feel and a great UX on desktop and mobile devices."
+      },
+      "backend": {
+        "p-1": "I use Server Actions, which allow direct manipulation of the database without the need for API endpoints. Prisma ORM ensures safe and efficient data handling.",
+        "p-2": "Data are stored in Neon serverless PostgreSQL, which provides a scalable database infrastructure with automatic sleep and wake-up for efficient performance and cost management.",
+        "p-3": "Login and user session management is handled through Kinde Auth, providing secure and seamless user authentication without the need for custom password management."
+      }
+    }
   },
   "ContactPage": {
     "title": "Contact",

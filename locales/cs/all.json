@@ -16,24 +16,40 @@
     "p-4": "Na svém vlastním projektu ukazuji, co jsem se dosud naučil – od uživatelského rozhraní až po práci s daty na serveru. Moje chuť neustále se zlepšovat a objevovat nové technologie je moje největší síla. Ačkoliv nemám formální IT vzdělání, věřím, že moje praktické zkušenosti, jazyková vybavenost a silná motivace mě dovedou rychle rozvíjet pod správným vedením. Jsem připraven přinášet hodnotu do každého týmu, se kterým budu spolupracovat."
   },
   "ProjectsPage": {
+    "title": "Projekty",
+    "technologies": "Použité technologie",
     "blockquote": {
       "p-1": "Na této stránce najdete zatím jen jeden projekt. Je to proto, že se jedná o klíčový a komplexní projekt, který zahrnuje většinu technologií a dovedností, které jsem si osvojil. I když mám za sebou i menší projekty, rozhodl jsem se soustředit právě na tento,protože nejlépe reprezentuje mou práci.",
       "p-2": " Rád bych vás ujistil, že již pracuji na dalších zajímavých projektech, které zde brzy zveřejním. Děkuji za pochopení a trpělivost."
     },
-    "title": "Projekty",
-    "shortDescription": "MERN Stack aplikace pro správu faktur.",
-    "info": "Tato aplikace je postavená na MERN stacku (MongoDB, Express.js,React, Node.js) a zaměřená na vysoký výkon, škálovatelnost a jednoduchou údržbu.",
-    "frontend": {
-      "p-1": "Frontend je postaven v Reactu s TypeScriptem, což poskytuje typovou bezpečnost a usnadňuje správu komplexních datových struktur. Aplikace umožňuje uživatelům volbu jazyka mezi češtinou a angličtinou, což zlepšuje dostupnost pro různé uživatele. Pro správu jazyků je využita knihovna i18next.",
-      "p-2": " Formuláře jsou spravovány pomocí React Hook Form s validací dat prostřednictvím knihovny Zod, což zajišťuje hladkou práci s uživatelskými vstupy. Pro práci s daty používám React Query, který zajišťuje efektivní synchronizaci a cachování dat, čímž zlepšuje celkovou výkonnost aplikace.",
-      "p-3": "  Aplikace je plně responzivní, postavená s pomocí TailwindCSS, což umožňuje rychlé úpravy a flexibilní přizpůsobení rozhraní různým zařízením. Uživatelé mohou navíc přepínat mezi tmavým a světlým režimem, což jim dává možnost přizpůsobit vzhled aplikace jejich preferencím."
+    "invoiceApp": {
+      "shortDescription": "MERN Stack aplikace pro správu faktur.",
+      "info": "Tato aplikace je postavená na MERN stacku (MongoDB, Express.js,React, Node.js) a zaměřená na vysoký výkon, škálovatelnost a jednoduchou údržbu.",
+      "frontend": {
+        "p-1": "Frontend je postaven v Reactu s TypeScriptem, což poskytuje typovou bezpečnost a usnadňuje správu komplexních datových struktur. Aplikace umožňuje uživatelům volbu jazyka mezi češtinou a angličtinou, což zlepšuje dostupnost pro různé uživatele. Pro správu jazyků je využita knihovna i18next.",
+        "p-2": " Formuláře jsou spravovány pomocí React Hook Form s validací dat prostřednictvím knihovny Zod, což zajišťuje hladkou práci s uživatelskými vstupy. Pro práci s daty používám React Query, který zajišťuje efektivní synchronizaci a cachování dat, čímž zlepšuje celkovou výkonnost aplikace.",
+        "p-3": "  Aplikace je plně responzivní, postavená s pomocí TailwindCSS, což umožňuje rychlé úpravy a flexibilní přizpůsobení rozhraní různým zařízením. Uživatelé mohou navíc přepínat mezi tmavým a světlým režimem, což jim dává možnost přizpůsobit vzhled aplikace jejich preferencím."
+      },
+      "backend": {
+        "p-1": " Backend běží na Express.js a je navržen tak, aby byl jednoduchý, robustní a efektivní. Autentizace a správa uživatelů je řešena pomocí jsonwebtoken, což poskytuje bezpečný přístup k chráněným zdrojům. Pro bezpečné ukládání hesel je nasazen bcryptjs.",
+        "p-2": " Práce s databází je realizována prostřednictvím MongoDB a Mongoose, což zajišťuje flexibilní a škálovatelné ukládání dat. Validace vstupů na backendu je prováděna také pomocí Zod, který zajišťuje konzistenci a validitu dat už od úrovně API.",
+        "p-3": " Pro optimalizaci práce s API a rychlé iterace je aplikace navržena podle RESTful principů, což zajišťuje snadnou údržbu a rozšiřitelnost."
+      }
     },
-    "backend": {
-      "p-1": " Backend běží na Express.js a je navržen tak, aby byl jednoduchý, robustní a efektivní. Autentizace a správa uživatelů je řešena pomocí jsonwebtoken, což poskytuje bezpečný přístup k chráněným zdrojům. Pro bezpečné ukládání hesel je nasazen bcryptjs.",
-      "p-2": " Práce s databází je realizována prostřednictvím MongoDB a Mongoose, což zajišťuje flexibilní a škálovatelné ukládání dat. Validace vstupů na backendu je prováděna také pomocí Zod, který zajišťuje konzistenci a validitu dat už od úrovně API.",
-      "p-3": " Pro optimalizaci práce s API a rychlé iterace je aplikace navržena podle RESTful principů, což zajišťuje snadnou údržbu a rozšiřitelnost."
-    },
-    "technologies": "Použité technologie"
+    "noteApp": {
+      "shortDescription": "Full-stack Notes aplikace s autentizací a responzivním designem.",
+      "info": "Notes aplikace je moderní, responzivní a bezpečná webová aplikace postavená na Next.js 15, která umožňuje správu poznámek s Neon serverless PostgreSQL, Server Actions, Prisma ORM a autentizací přes Kinde Auth, zatímco frontend využívá ShadCN UI a React Query pro efektivní práci s daty. ",
+      "frontend": {
+        "p-1": "Aplikace běží na Next.js 15 s React 19, což umožňuje rychlé vykreslování a efektivní správu stavu. App Router přináší moderní přístup k řízení stránek a optimalizuje výkon.",
+        "p-2": " Pro synchronizaci a načítání poznámek využívám TanStack React Query, který efektivně kešuje data, minimalizuje počet serverových požadavků a podporuje optimistické aktualizace.",
+        "p-3": "Rozhraní je navrženo s důrazem na responzivitu a přístupnost. Komponenty z ShadCN UI zajišťují konzistentní vzhled a skvělý UX na desktopu i mobilních zařízeních."
+      },
+      "backend": {
+        "p-1": "Využívám Server Actions, které umožňují přímou manipulaci s databází bez nutnosti API endpointů. Prisma ORM zajišťuje bezpečnou a efektivní práci s daty.",
+        "p-2": "Data jsou uložena v Neon serverless PostgreSQL, která poskytuje škálovatelnou databázovou infrastrukturu s automatickým uspáváním a probouzením pro efektivní správu výkonu a nákladů.",
+        "p-3": "Přihlášení a správa uživatelských relací je řešena přes Kinde Auth, což poskytuje bezpečné a bezproblémové ověřování uživatelů bez potřeby vlastní správy hesel."
+      }
+    }
   },
   "ContactPage": {
     "title": "Kontakt",
