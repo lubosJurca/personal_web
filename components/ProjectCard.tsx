@@ -11,6 +11,7 @@ import {
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { motion } from 'framer-motion';
 
 import { useTranslation } from 'react-i18next';
 
@@ -26,11 +27,26 @@ type ProjectCardProps = {
   backend: string[];
 };
 
+const cardVariants = {
+  hidden: { opacity: 0, scale: 0.8, y: 50 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: 'easeOut' },
+  },
+};
+
 const ProjectCard = (data: ProjectCardProps) => {
   const { t } = useTranslation();
   return (
-    <>
-      <Card className='bg-transparent border-none shadow-none'>
+    <motion.div
+      variants={cardVariants}
+      initial='hidden'
+      whileInView='visible'
+      viewport={{ once: false, amount: 0.3 }}
+    >
+      <Card className='bg-transparent border-none shadow-none '>
         <CardHeader className='flex flex-col items-center justify-center gap-3'>
           <CardTitle className='text-primaryLight  underline text-3xl'>
             {data.title}
@@ -38,7 +54,7 @@ const ProjectCard = (data: ProjectCardProps) => {
           <Image
             src={data.image}
             alt='Project Screenshot'
-            className='max-w-60 h-40 object-cover rounded-lg mb-4'
+            className='size-auto object-cover rounded-lg mb-4'
           />
           <CardDescription className='text-primaryLight'>
             {t(data.description)}
@@ -99,7 +115,7 @@ const ProjectCard = (data: ProjectCardProps) => {
           </ul>
         </CardFooter>
       </Card>
-    </>
+    </motion.div>
   );
 };
 export default ProjectCard;

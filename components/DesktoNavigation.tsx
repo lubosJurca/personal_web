@@ -7,7 +7,7 @@ const DesktoNavigation = () => {
   const { t } = useTranslation('all');
 
   return (
-    <ul className='sm:flex gap-14 font-bold text-2xl'>
+    <ul className='sm:flex gap-14 font-bold text-2xl hidden md:flex'>
       {LINKS.map((link) => (
         <li key={link.id} className='hover:text-teal-800  transition-all'>
           <Link href={link.href} prefetch={false}>

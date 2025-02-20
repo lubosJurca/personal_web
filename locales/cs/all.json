@@ -10,10 +10,10 @@
   },
   "AboutPage": {
     "title": "Něco málo o mně",
-    "p-1": "Jsem odhodlaný samouk, který se každý den učí nové technologie, aby se stal vývojářem v IT. Můj cíl není poháněn finančními důvody – v současném oboru mám bohaté zkušenosti a schopnost stabilně si udržet práci. Přesto mě programování zaujalo natolik, že v něm vidím svou budoucnost.",
-    "p-2": "Po dokončení maturity jsem se rozhodl cestovat a objevovat nové kultury i sám sebe. Strávil jsem přes dva roky ve Vancouveru v Kanadě, kde jsem pracoval ve strojírenství bez krajanů a díky tomu se zdokonalil v angličtině. Později jsem pracoval také v Německu, což mi dalo základy němčiny. Mimo to jsem procestoval Asii, navštívil jsem Bali, Kambodžu, Bangkok a Singapur a také jsem navštívil Hawaii.  Cestování  mě obohatilo o nové zážitky a pohled na svět.",
-    "p-3": "K programování mě přivedla vášeň pro řešení problémů. Začal jsem s HTML, CSS, JavaScriptem a Reactem, a poté se posunul k Next.js a backend technologiím prostřednictvím MERN stacku (MongoDB, Express.js, React, Node.js). Umím navrhnout jednoduchý backend a propojit ho s databází, což mi umožňuje vytvářet plně funkční webové aplikace.",
-    "p-4": "Na svém vlastním projektu ukazuji, co jsem se dosud naučil – od uživatelského rozhraní až po práci s daty na serveru. Moje chuť neustále se zlepšovat a objevovat nové technologie je moje největší síla. Ačkoliv nemám formální IT vzdělání, věřím, že moje praktické zkušenosti, jazyková vybavenost a silná motivace mě dovedou rychle rozvíjet pod správným vedením. Jsem připraven přinášet hodnotu do každého týmu, se kterým budu spolupracovat."
+    "p-1": "Jsem odhodlaný samouk a vášnivý vývojář, který se neustále učí a zdokonaluje v moderních webových technologiích. Mým cílem je stát se profesionálním vývojářem v IT a přinášet hodnotu skrze kvalitní a efektivní kód.",
+    "p-2": "Po dokončení maturity jsem několik let cestoval a pracoval v různých zemích, což mi umožnilo získat nové perspektivy a zlepšit jazykové dovednosti. Strávil jsem přes dva roky ve Vancouveru v Kanadě, kde jsem pracoval ve strojírenství a zdokonalil se v angličtině. Později jsem pracoval v Německu, díky čemuž mám i základy němčiny. Mimo to jsem procestoval Asii (Bali, Kambodža, Bangkok, Singapur) i Hawaii.",
+    "p-3": "K programování mě přivedla chuť tvořit a řešit problémy. Začal jsem s HTML, CSS, JavaScriptem a Reactem, později jsem se zaměřil na Next.js a backendové technologie. Mám zkušenosti s MERN stackem (MongoDB, Express.js, React, Node.js) i s moderními přístupy, jako jsou Server Actions, Prisma ORM a serverless databáze.",
+    "p-4": "Mým největším přínosem je schopnost učit se nové technologie a rychle je aplikovat do praxe. Ačkoliv nemám formální IT vzdělání, věřím, že moje praktické zkušenosti, odhodlání a schopnost adaptace mě dovedou k tomu, abych byl silným vývojářem v jakémkoliv týmu."
   },
   "ProjectsPage": {
     "title": "Projekty",

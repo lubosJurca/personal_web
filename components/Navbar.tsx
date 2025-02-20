@@ -3,17 +3,40 @@
 import MobileNavigation from './MobileNavigation';
 import LanguageChanger from './LanguageChanger';
 import DesktoNavigation from './DesktoNavigation';
-import { useMediaQuery } from '@/hooks/use-media-query';
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
-  const isDesktop = useMediaQuery('(min-width: 768px)');
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 30) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header>
-      <nav className='flex p-4 sm:p-2 items-center justify-between'>
+    <motion.header
+      initial={{ backgroundColor: 'transparent' }}
+      animate={{
+        backgroundColor: scrolled ? '#194146' : 'transparent',
+      }}
+      transition={{ duration: 0.3 }}
+      className='sticky top-0 z-50 rounded-lg  transition-all duration-300 '
+    >
+      <motion.nav className='flex p-4  transition-colors duration-300 sm:p-2 items-center justify-between '>
         <LanguageChanger />
-        {isDesktop ? <DesktoNavigation /> : <MobileNavigation />}
-      </nav>
-    </header>
+        <MobileNavigation />
+        <DesktoNavigation />
+      </motion.nav>
+    </motion.header>
   );
 };
 export default Navbar;

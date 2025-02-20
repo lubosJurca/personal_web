@@ -53,7 +53,7 @@ const MobileNavigation = () => {
   };
 
   return (
-    <div>
+    <nav className='flex md:hidden'>
       <Button
         className='bg-transparent'
         onClick={toggleMenu}
@@ -117,7 +117,7 @@ const MobileNavigation = () => {
           </motion.ul>
         )}
       </AnimatePresence>
-    </div>
+    </nav>
   );
 };
 export default MobileNavigation;
