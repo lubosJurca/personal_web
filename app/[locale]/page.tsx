@@ -9,7 +9,7 @@ const Home = async ({ params: { locale } }: { params: { locale: string } }) => {
   const { t } = await initTranslations(locale, i18nNamespaces);
 
   return (
-    <section className='flex  flex-col py-10 gap-10  items-center '>
+    <section className='flex  flex-col py-10 gap-10  items-center p-2'>
       <div className='flex w-full flex-col md:flex-row gap-y-6 justify-evenly items-center'>
         <Image
           alt='Portfolio fotka'

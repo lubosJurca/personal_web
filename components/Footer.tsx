@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 const Footer = () => {
   const { t } = useTranslation('all');
   return (
-    <footer className='container flex flex-col sm:flex-row gap-8 justify-between text-center '>
+    <footer className='container flex flex-col sm:flex-row gap-8 justify-between text-center p-2'>
       <div className='mb-4'>
         <h2 className='text-2xl font-semibold'>{t('Footer.title')}</h2>
         <p className='text-gray-400'>{t('Footer.text')}</p>

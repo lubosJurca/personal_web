@@ -42,7 +42,7 @@ const ImageCarousel = () => {
       opts={{
         align: 'start',
       }}
-      className='max-w-full mt-8'
+      className=' mt-8'
     >
       <CarouselContent className=''>
         {images.map((image, index) => (

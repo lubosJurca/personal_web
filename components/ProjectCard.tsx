@@ -28,13 +28,8 @@ type ProjectCardProps = {
 };
 
 const cardVariants = {
-  hidden: { opacity: 0, scale: 0.8, y: 50 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: 'easeOut' },
-  },
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
 };
 
 const ProjectCard = (data: ProjectCardProps) => {
@@ -44,7 +39,7 @@ const ProjectCard = (data: ProjectCardProps) => {
       variants={cardVariants}
       initial='hidden'
       whileInView='visible'
-      viewport={{ once: false, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.2 }}
     >
       <Card className='bg-transparent border-none shadow-none '>
         <CardHeader className='flex flex-col items-center justify-center gap-3'>
