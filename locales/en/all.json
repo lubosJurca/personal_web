@@ -49,6 +49,20 @@
         "p-2": "Data are stored in Neon serverless PostgreSQL, which provides a scalable database infrastructure with automatic sleep and wake-up for efficient performance and cost management.",
         "p-3": "Login and user session management is handled through Kinde Auth, providing secure and seamless user authentication without the need for custom password management."
       }
+    },
+    "meanApp": {
+      "shortDescription": "Full-stack MEAN Invoice Management application with JWT authentication, AI assistant, and responsive design.",
+      "info": "Invoice Management is a modern, responsive, and secure web application built on Angular 20, enabling comprehensive invoice management with MongoDB database, Express.js backend, JWT authentication, and AI assistant, while the frontend utilizes PrimeNG UI components and RxJS for reactive data management.",
+      "frontend": {
+        "p-1": "The application runs on Angular 20 with Zoneless Change Detection, enabling faster rendering and more efficient state management. Standalone components bring a modern approach without NgModule and lazy loading optimizes application performance.",
+        "p-2": "For synchronizing and loading invoices, I use RxJS streams with combineLatest and switchMap operators, which efficiently react to changes in user, filters, and refresh triggers. BehaviorSubject caches data and shareReplay minimizes the number of server requests.",
+        "p-3": "The interface is designed with emphasis on responsiveness using PrimeNG components and Tailwind CSS. The application offers light and dark mode, desktop and mobile layouts, and includes an AI assistant for user support."
+      },
+      "backend": {
+        "p-1": "The backend is built on Express.js with TypeScript and uses Mongoose ORM for MongoDB communication. RESTful API endpoints are protected by JWT middleware, which verifies user authorization with each request.",
+        "p-2": "Data is stored in MongoDB, which provides a flexible NoSQL database structure for invoices with nested items, addresses, and metadata. Mongoose schemas ensure data validation at the backend level.",
+        "p-3": "Authentication is handled via JWT tokens stored in sessionStorage with Bearer authentication scheme. The server validates tokens using the jsonwebtoken library and middleware protects all secured endpoints from unauthorized access."
+      }
     }
   },
   "ContactPage": {

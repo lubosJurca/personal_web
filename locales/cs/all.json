@@ -49,6 +49,20 @@
         "p-2": "Data jsou uložena v Neon serverless PostgreSQL, která poskytuje škálovatelnou databázovou infrastrukturu s automatickým uspáváním a probouzením pro efektivní správu výkonu a nákladů.",
         "p-3": "Přihlášení a správa uživatelských relací je řešena přes Kinde Auth, což poskytuje bezpečné a bezproblémové ověřování uživatelů bez potřeby vlastní správy hesel."
       }
+    },
+    "meanApp": {
+      "shortDescription": "Full-stack MEAN Invoice Management aplikace s JWT autentizací, AI asistentem a responzivním designem.",
+      "info": "Invoice Management je moderní, responzivní a bezpečná webová aplikace postavená na Angular 20, která umožňuje komplexní správu faktur s MongoDB databází, Express.js backendem, JWT autentizací a AI asistentem, zatímco frontend využívá PrimeNG UI komponentů a RxJS pro reaktivní správu dat.",
+      "frontend": {
+        "p-1": "Aplikace běží na Angular 20 s Zoneless Change Detection, což umožňuje rychlejší vykreslování a efektivnější správu stavu. Standalone komponenty přinášejí moderní přístup bez NgModule a lazy loading optimalizuje výkon aplikace.",
+        "p-2": "Pro synchronizaci a načítání faktur využívám RxJS operátory, které efektivně reagují na změny uživatele, filtrů i refresh triggerů. BehaviorSubject cachuje data a shareReplay minimalizuje počet serverových požadavků.",
+        "p-3": "Rozhraní je navrženo s důrazem na responzivitu pomocí PrimeNG komponentů a Tailwind CSS. Aplikace nabízí světlý i tmavý režim, desktop i mobilní layout a obsahuje AI asistenta pro podporu uživatelů."
+      },
+      "backend": {
+        "p-1": "Backend je postaven na Express.js s TypeScript a využívá Mongoose ORM pro komunikaci s MongoDB. RESTful API endpointy jsou chráněny JWT middleware, které ověřuje autorizaci uživatelů při každém requestu.",
+        "p-2": "Data jsou uložena v MongoDB, která poskytuje flexibilní NoSQL databázovou strukturu pro faktury. Mongoose schémata zajišťují validaci dat na úrovni backendu.",
+        "p-3": "Autentizace je řešena přes JWT tokeny uložené v sessionStorage s Bearer authentication schématem. Server validuje tokeny pomocí jsonwebtoken knihovny a middleware chrání všechny chráněné endpointy před neoprávněným přístupem."
+      }
     }
   },
   "ContactPage": {
