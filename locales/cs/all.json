@@ -26,7 +26,7 @@
       "shortDescription": "Full-stack Kanban board aplikace s Angularem a ASP.NET Core.",
       "info": "Kanbaan je Kanban board aplikace pro správu úkolů, kterou aktivně vyvíjím jako učební projekt. Backend v C# ASP.NET Core s PostgreSQL je hotový a momentálně pracuji na Angular frontendu. Cílem je plně funkční board s autentizací, správou sloupců a úkolů včetně drag-and-drop řazení.",
       "frontend": {
-        "p-1": "Frontend využívá Angular 21 se standalone komponentami a lazy loadingem. Správa stavu je řešena přes NgRx Signal Store s entity adaptery, kde služby zajišťují HTTP volání a story spravují stav aplikace pomocí reaktivních signálů a computed vlastností.",
+        "p-1": "Frontend využívá Angular 21 se standalone komponentami. Správa stavu je řešena přes NgRx Signal Store s entity adaptery, kde služby zajišťují HTTP volání a story spravují stav aplikace pomocí reaktivních signálů a computed vlastností.",
         "p-2": "Rozhraní je postaveno na PrimeNG 21 komponentech a Tailwind CSS 4. Pro konzistentní stylování jsem vytvořil vlastní Claude skill — strukturovanou sadu designových pravidel a vzorů, podle kterých Claude Code generuje styly komponent. Tento přístup urychluje vývoj a zároveň udržuje konzistentní design napříč celou aplikací.",
         "p-3": "Autentizační flow včetně přihlášení, registrace, route guardů a odhlášení je plně implementován. Dashboard s postranní navigací a správou boardů je funkční a správa sloupců s řazením je na místě. Správa úkolů a podúkolů je dalším krokem na plánu."
       },

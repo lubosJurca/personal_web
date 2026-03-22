@@ -26,7 +26,7 @@
       "shortDescription": "Full-stack Kanban board application with Angular and ASP.NET Core.",
       "info": "Kanbaan is a Kanban board application for task management that I'm actively building as a learning project. The backend in C# ASP.NET Core with PostgreSQL is complete, and I'm currently developing the Angular frontend. The goal is a fully functional board with authentication, column and task management including drag-and-drop reordering.",
       "frontend": {
-        "p-1": "The frontend uses Angular 21 with standalone components and lazy loading. State management is handled by NgRx Signal Store with entity adapters, where services are responsible for HTTP calls and stores manage application state with reactive signals and computed properties.",
+        "p-1": "The frontend uses Angular 21 with standalone components. State management is handled by NgRx Signal Store with entity adapters, where services are responsible for HTTP calls and stores manage application state with reactive signals and computed properties.",
         "p-2": "The UI is built with PrimeNG 21 components and Tailwind CSS 4. For consistent styling, I created a custom Claude skill — a structured set of design rules and patterns that Claude Code follows when generating component styles. This approach speeds up development while keeping the design consistent across the entire application.",
         "p-3": "Authentication flow including login, registration, route guards and logout is fully implemented. The dashboard with sidebar navigation and board management is functional, and column management with reordering is in place. Task and subtask features are next on the roadmap."
       },
