@@ -7,11 +7,9 @@ import typescriptLogo from "@/public/logos--typescript-icon.png";
 import javascriptLogo from "@/public/skill-icons--javascript.png";
 import expressLogo from "@/public/expressLogo.png";
 import tailwindLogo from "@/public/tailwindLogo.png";
-import nextjsLogo from "@/public/nextjsLogo.png";
-import mongodbLogo from "@/public/mongodbLogo.png";
 import restapiLogo from "@/public/restapiLogo.png";
 import postgreLogo from "@/public/postgresql-icon.svg";
-import prismaLogo from "@/public/prisma-logo.svg";
+import dotnetLogo from "@/public/dotnet-logo.png"
 
 const TechStack = () => {
   const techstack = [
@@ -24,8 +22,12 @@ const TechStack = () => {
       icon: reactLogo,
     },
     {
-      name: "Next.js",
-      icon: nextjsLogo,
+      name: ".NET",
+      icon: dotnetLogo,
+    },
+        {
+      name: "Rest API",
+      icon: restapiLogo,
     },
     {
       name: "Typescript",
@@ -43,23 +45,10 @@ const TechStack = () => {
       name: "Tailwind CSS",
       icon: tailwindLogo,
     },
-
-    {
-      name: "MongoDB",
-      icon: mongodbLogo,
-    },
     {
       name: "PostgreSQL",
       icon: postgreLogo,
-    },
-    {
-      name: "Prisma",
-      icon: prismaLogo,
-    },
-    {
-      name: "Rest API",
-      icon: restapiLogo,
-    },
+    }
   ];
 
   return (

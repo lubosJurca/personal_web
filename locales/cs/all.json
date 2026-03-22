@@ -1,6 +1,6 @@
 {
   "HomePage": {
-    "text": " Jsem odhodlaný samouk s vášní pro programování, kde nacházím prostor pro kreativitu a řešení výzev. Každý den se snažím zlepšovat, objevovat nové technologie a vytvářet moderní webové aplikace. Mým cílem je stát se Frontend developerem, který přináší hodnotu a inspiraci do každého projektu."
+    "text": "Jsem Angular developer s komerční praxí a vášní pro tvorbu moderních webových aplikací. Specializuji se na Angular a TypeScript, pracuji s PostgreSQL a aktivně rozvíjím i backend znalosti v ASP.NET Core. Každý den se snažím psát čistší kód, rozumět architektuře a posouvat se od juniora směrem k seniorovi."
   },
   "Navbar": {
     "home": "Domů",
@@ -10,10 +10,10 @@
   },
   "AboutPage": {
     "title": "Něco málo o mně",
-    "p-1": "Jsem odhodlaný samouk a vášnivý vývojář, který se neustále učí a zdokonaluje v moderních webových technologiích. Mým cílem je stát se profesionálním vývojářem v IT a přinášet hodnotu skrze kvalitní a efektivní kód.",
+    "p-1": "Jsem Angular developer s komerční praxí a silnou motivací neustále růst. Specializuji se na Angular a TypeScript, pracuji s PostgreSQL a rozvíjím i backend dovednosti v ASP.NET Core. Věřím, že kvalitní kód se pozná nejen tím, že funguje — ale tím, že mu rozumí i ostatní.",
     "p-2": "Po dokončení maturity jsem několik let cestoval a pracoval v různých zemích, což mi umožnilo získat nové perspektivy a zlepšit jazykové dovednosti. Strávil jsem přes dva roky ve Vancouveru v Kanadě, kde jsem pracoval ve strojírenství a zdokonalil se v angličtině. Později jsem pracoval v Německu, díky čemuž mám i základy němčiny. Mimo to jsem procestoval Asii (Bali, Kambodža, Bangkok, Singapur) i Hawaii.",
-    "p-3": "K programování mě přivedla chuť tvořit a řešit problémy. Začal jsem s HTML, CSS, JavaScriptem a Reactem, později jsem se zaměřil na Next.js a backendové technologie. Mám zkušenosti s MERN stackem (MongoDB, Express.js, React, Node.js) i s moderními přístupy, jako jsou Server Actions, Prisma ORM a serverless databáze.",
-    "p-4": "Mým největším přínosem je schopnost učit se nové technologie a rychle je aplikovat do praxe. Ačkoliv nemám formální IT vzdělání, věřím, že moje praktické zkušenosti, odhodlání a schopnost adaptace mě dovedou k tomu, abych byl silným vývojářem v jakémkoliv týmu."
+    "p-3": "K programování mě přivedla chuť tvořit a řešit problémy — stejná, která mě kdysi táhla k CNC obrábění. Po více než deseti letech v průmyslu jsem se rozhodl pro kariérní změnu a čtyři roky jsem se samostatně učil programovat. Začal jsem s HTML, CSS a JavaScriptem, prošel Reactem a Next.js, až jsem se zaměřil na Angular a .NET — technologie, se kterými dnes pracuji komerčně každý den.",
+    "p-4": "Mým největším přínosem je schopnost učit se rychle a aplikovat nové věci rovnou do praxe. Kariérní změna mě naučila, že disciplína a odhodlání jsou důležitější než původní vzdělání — a přesně s tím přistupuji i ke svému rozvoji jako vývojář."
   },
   "ProjectsPage": {
     "title": "Projekty",
@@ -21,6 +21,20 @@
     "blockquote": {
       "p-1": "Na této stránce najdete zatím jen jeden projekt. Je to proto, že se jedná o klíčový a komplexní projekt, který zahrnuje většinu technologií a dovedností, které jsem si osvojil. I když mám za sebou i menší projekty, rozhodl jsem se soustředit právě na tento,protože nejlépe reprezentuje mou práci.",
       "p-2": " Rád bych vás ujistil, že již pracuji na dalších zajímavých projektech, které zde brzy zveřejním. Děkuji za pochopení a trpělivost."
+    },
+    "kanbanApp": {
+      "shortDescription": "Full-stack Kanban board aplikace s Angularem a ASP.NET Core.",
+      "info": "Kanbaan je Kanban board aplikace pro správu úkolů, kterou aktivně vyvíjím jako učební projekt. Backend v C# ASP.NET Core s PostgreSQL je hotový a momentálně pracuji na Angular frontendu. Cílem je plně funkční board s autentizací, správou sloupců a úkolů včetně drag-and-drop řazení.",
+      "frontend": {
+        "p-1": "Frontend využívá Angular 21 se standalone komponentami a lazy loadingem. Správa stavu je řešena přes NgRx Signal Store s entity adaptery, kde služby zajišťují HTTP volání a story spravují stav aplikace pomocí reaktivních signálů a computed vlastností.",
+        "p-2": "Rozhraní je postaveno na PrimeNG 21 komponentech a Tailwind CSS 4. Pro konzistentní stylování jsem vytvořil vlastní Claude skill — strukturovanou sadu designových pravidel a vzorů, podle kterých Claude Code generuje styly komponent. Tento přístup urychluje vývoj a zároveň udržuje konzistentní design napříč celou aplikací.",
+        "p-3": "Autentizační flow včetně přihlášení, registrace, route guardů a odhlášení je plně implementován. Dashboard s postranní navigací a správou boardů je funkční a správa sloupců s řazením je na místě. Správa úkolů a podúkolů je dalším krokem na plánu."
+      },
+      "backend": {
+        "p-1": "Backend běží na ASP.NET Core 10 s repository patternem, který čistě odděluje přístup k datům od logiky controllerů. API endpointy jsou chráněny cookie-based autentizací přes ASP.NET Identity, které vrací správné HTTP stavové kódy místo přesměrování pro SPA frontend.",
+        "p-2": "Data jsou uložena v PostgreSQL hostovaném na Neonu. Entity Framework Core zajišťuje přístup k datům s automatickým sledováním časových razítek — pole CreatedAt a UpdatedAt se nastavují automaticky při každém insertu a updatu přes vlastní přepsání SaveChanges.",
+        "p-3": "Autorizace využívá vlastní AuthService, který ověřuje vlastnictví zdrojů procházením vztahů mezi entitami — od boardů přes sloupce a úkoly až po podúkoly. Tím je zajištěno, že uživatelé mají přístup pouze ke svým vlastním datům na každé úrovni hierarchie."
+      }
     },
     "invoiceApp": {
       "shortDescription": "MERN Stack aplikace pro správu faktur.",

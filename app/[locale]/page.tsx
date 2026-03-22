@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import profilePic from '@/public/profile4.jpg';
+import profilePic from '@/public/new-logo-of-me.jpeg';
 import TechStack from '@/components/TechStack';
 import initTranslations from '../i18n';
 
@@ -21,7 +21,7 @@ const Home = async ({ params: { locale } }: { params: { locale: string } }) => {
           <h1>Luboš Jurča</h1>
           <div className='flex gap-2 justify-center items-center '>
             <div className='w-2 h-8 bg-decoration'></div>
-            <h2>Junior React Developer</h2>
+            <h2>Frontend Developer</h2>
           </div>
 
           <p className='text-primaryLight'>{t('HomePage.text')}</p>

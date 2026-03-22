@@ -1,8 +1,42 @@
 import invoiceAppScreenshot from "@/public/mernApp.png";
 import noteAppScreenshot from "@/public/note-printscreen.png";
 import meanAppScreenshot from "@/public/angular.png";
+import kanbanAppScreenshot from "@/public/kanban.png"
 
 export const projects = [
+ {
+  title: "Kanbaan",
+  description: "ProjectsPage.kanbanApp.shortDescription",
+  image: kanbanAppScreenshot,
+  github: "https://github.com/lubosJurca/kanbaan_frontend",
+  liveDemo: "https://kanbaan-frontend.vercel.app/",
+  technologies: [
+    "Angular",
+    "ASP.NET Core",
+    "C#",
+    "PostgreSQL",
+    "TypeScript",
+    "Tailwind CSS",
+    "Cookie Auth",
+    "REST API",
+    "PrimeNG",
+    "NgRx Signal Store",
+    "Entity Framework Core",
+    "Neon",
+  ],
+  info: "ProjectsPage.kanbanApp.info",
+  frontend: [
+    "ProjectsPage.kanbanApp.frontend.p-1",
+    "ProjectsPage.kanbanApp.frontend.p-2",
+    "ProjectsPage.kanbanApp.frontend.p-3",
+  ],
+  backend: [
+    "ProjectsPage.kanbanApp.backend.p-1",
+    "ProjectsPage.kanbanApp.backend.p-2",
+    "ProjectsPage.kanbanApp.backend.p-3",
+  ],
+},
+
   {
     title: "MEAN Invoice App",
     description: "ProjectsPage.meanApp.shortDescription",
